@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A760D7C2C076E3E00B32A83 /* TodoItemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A760D7B2C076E3E00B32A83 /* TodoItemImage.swift */; };
 		1A93DBD72BFCD663001385E4 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93DBD62BFCD663001385E4 /* TodoListViewModel.swift */; };
 		1A93DBE42BFCDF67001385E4 /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A93DBE32BFCDF67001385E4 /* Supabase.swift */; };
 		1A93DBE72BFF974D001385E4 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 1A93DBE62BFF974D001385E4 /* Auth */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A760D7B2C076E3E00B32A83 /* TodoItemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemImage.swift; sourceTree = "<group>"; };
 		1A93DBD62BFCD663001385E4 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		1A93DBE32BFCDF67001385E4 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
 		1A93DBF22BFF9CE9001385E4 /* AppEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntryView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				814A08FD2BC41C7800921E4F /* TodoItem.swift */,
+				1A760D7B2C076E3E00B32A83 /* TodoItemImage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				815D9D7F2BC413800050957E /* LandingView.swift in Sources */,
 				1A93DBE42BFCDF67001385E4 /* Supabase.swift in Sources */,
 				814A08FC2BC41BC500921E4F /* ItemView.swift in Sources */,
+				1A760D7C2C076E3E00B32A83 /* TodoItemImage.swift in Sources */,
 				814A08FE2BC41C7800921E4F /* TodoItem.swift in Sources */,
 				1A93DBF32BFF9CE9001385E4 /* AppEntryView.swift in Sources */,
 				815D9D7D2BC413800050957E /* TodoListApp.swift in Sources */,

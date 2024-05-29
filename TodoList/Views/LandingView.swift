@@ -28,13 +28,23 @@ struct LandingView: View {
                 
                 if viewModel.todos.isEmpty {
                     
-                    // Show the prompy to add a new to-do item
-                    ContentUnavailableView(
-                        "No to-do items",
-                        systemImage: "pencil.tip.crop.circle.badge.plus",
-                        description: Text("Add a reminder to get started")
-                    )
-                    
+                    if viewModel.fetchingTodos {
+                        
+                        Spacer()
+                        
+                        ProgressView()
+                        
+                        Spacer()
+                        
+                    } else {
+                        
+                        ContentUnavailableView(
+                            "No to-do items",
+                            systemImage: "pencil.tip.crop.circle.badge.plus",
+                            description: Text("Add a reminder to get started")
+                        )
+                        
+                    }
                 } else {
                     
                     // Show the list of items
@@ -60,7 +70,7 @@ struct LandingView: View {
             // Show the sheet to add a new item
             .sheet(isPresented: $presentingNewItemSheet) {
                 NewItemView(showSheet: $presentingNewItemSheet)
-                    .presentationDetents([.fraction(0.15)])
+                    .presentationDetents([.fraction(0.25)])
             }
             // Add a tool bar to the top of the interface
             // NOTE: For a toolbar to appear, it must be
@@ -83,6 +93,7 @@ struct LandingView: View {
                 }
             }
         }
+        .environment(viewModel)
     }
     
 }
